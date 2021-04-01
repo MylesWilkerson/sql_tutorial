@@ -11,7 +11,7 @@ def create_connection(path):
 
     return connection
 
-connection = create_connection("/Users/thehiddengeniusproject/documents/sql_tutorial/sm_app.sqlite")
+connection = create_connection("sm_app.sqlite")
 
 def execute_query(connection, query):
     cursor = connection.cursor()

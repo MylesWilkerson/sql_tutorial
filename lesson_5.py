@@ -1,4 +1,4 @@
-****************************************************************************
+'''****************************************************************************
 *  Program  lessson_5.py                                                   *
 *  Author   Myles Wilkerson                                                 *
 *  Date     March 31, 2021                                                 *
@@ -51,7 +51,7 @@ def execute_read_query(connection, query): #Telling database to do soemthing but
     except Error as e:
         print(f"The error '{e}' occurred")
 ###################  Connect/Create to the Sqlite3 Database File *********************
-connection = create_connection("/users/richardkamau/sql_tutorial/oak8_pods.sqlite5")
+connection = create_connection("oak8_pods.sqlite5")
 ##########################  Create staff table variable query ################
 create_staff_member_table_query = """
 CREATE TABLE IF NOT EXISTS staff (
